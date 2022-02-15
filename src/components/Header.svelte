@@ -1,5 +1,5 @@
 <div>
-  <h1>Im a header</h1>
+  <h1>Im a header component</h1>
 </div>
 
 <style>
