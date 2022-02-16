@@ -41,7 +41,7 @@
   }
 
 	@media (min-width: 640px) {
-		main {
+		section {
 			max-width: none;
 		}
 	}
