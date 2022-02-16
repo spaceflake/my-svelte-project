@@ -1,5 +1,10 @@
+<script>
+  let text = 'header'
+</script>
+
+
 <div>
-  <h1>Im a header component</h1>
+  <h1>Im a {text} component</h1>
 </div>
 
 <style>

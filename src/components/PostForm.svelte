@@ -41,8 +41,11 @@
     background-color: brown;
     color: white;
     padding: 1.5rem;
-    margin: 1rem;
+    margin: auto;
     height: fit-content;
+  }
+  h2 {
+    margin-top: 0;
   }
   button {
     background-color: chocolate;

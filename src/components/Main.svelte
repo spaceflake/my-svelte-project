@@ -1,31 +1,30 @@
 <script>
-  import Hero from "./Hero.svelte";
   import PostForm from './PostForm.svelte';
   import PostItem from './PostItem.svelte'
 
-  $: posts = []
+  const posts = []
 
   const saveNewPost = (post) => {
     posts = [post,...posts]
   }
 </script>
-<Hero />
+
 <div class="container">
   <PostForm onSubmit={saveNewPost}/>
   <div class="post-container">
+    //Show example post if posts is empty
+    {#if posts.length === 0}
     <PostItem />
-    
+    {/if}
+    //Loop through posts
     {#each posts as post}
     <PostItem title={post.title} content={post.content}/>
     {/each}
-
-
   </div>
 </div>
 
 <style>
   .container {
-    display: flex;
     background-color: antiquewhite;
     padding: 2rem;
   }
@@ -34,6 +33,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: .5rem;
-    margin: 1rem;
+    margin: auto;
+    max-width: 75%;
+    padding: 2rem;
+
   }
 </style>
