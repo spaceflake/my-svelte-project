@@ -12,11 +12,11 @@
 <div class="container">
   <PostForm onSubmit={saveNewPost}/>
   <div class="post-container">
-    //Show example post if posts is empty
+    
     {#if posts.length === 0}
     <PostItem />
     {/if}
-    //Loop through posts
+    
     {#each posts as post}
     <PostItem title={post.title} content={post.content}/>
     {/each}
