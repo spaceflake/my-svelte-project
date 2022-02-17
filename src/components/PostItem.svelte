@@ -15,7 +15,6 @@
     color: brown;
     max-width: 20rem;
     min-width: 10rem;
-    /* height: max-content; */
     padding: 1.5rem;
     border-radius: .5rem;
     border: 1px solid brown;

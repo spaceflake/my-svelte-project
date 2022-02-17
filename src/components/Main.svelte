@@ -2,7 +2,7 @@
   import PostForm from './PostForm.svelte';
   import PostItem from './PostItem.svelte'
 
-  const posts = []
+  $: posts = []
 
   const saveNewPost = (post) => {
     posts = [post,...posts]
